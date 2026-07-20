@@ -1,0 +1,25 @@
+/* ---------------------------------------모바일 레이아웃 시작 */
+#wrap {
+    position: relative;
+    z-index:200;
+}
+/* ---------------------------------------1행 제목+후원 */
+#wrap .intro {
+    background-image: url(../images/bg1.png);
+    background-size: cover; /* 피그마 - 채우기 */
+}
+#wrap .intro::after { /* 이미지 위 깔리는 반투명 그라데이션용도 가상선택자 */
+    background: var(--color-gradient-dark);
+    content:''; display:block;
+    width:100%; height:100%;
+    position: absolute; left:0; top:0; z-index:100;
+}
+#wrap .intro .container {
+    height:589px;/* 실제 내용태그들을 묶는 레이아웃태그에 크기 입력 권장 */
+}
+#wrap .intro .container .logo {width:var(--icon-lg);}
+#wrap .intro .container .logo img {width:100%;}
+#wrap .intro .container .title {}
+#wrap .intro .container .btn_g {}
+#wrap .intro .container .btn_g .sponser_btn {}
+#wrap .intro .container .btn_g .sponser_qna_btn {}

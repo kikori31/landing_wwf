@@ -1,0 +1,45 @@
+/* var.css */
+/* 글자옵션, 레이아웃크기 등 값 위주의 변수 */
+:root {
+    /* 색상 */
+    --color-primary:#F5820E;
+    --color-dark:#111;
+    --color-light:#fff;
+    --color-gray:#ddd;
+    --color-gradient-dark:linear-gradient(90deg, rgba(0,0,0,0), rgba(0,0,0,1));
+
+    /* 글자크기 */
+
+    /* 크기, 여백 */
+    /* 모바일 */
+    --spacing-m-l-r:15px;
+    /* 태블릿 */
+    --spacing-t-l-r:60px;
+    /* 데스크탑 */
+    --width-desktop:1120px;
+    /* 공통 */
+    --spacing-auto:0 auto;
+    --icon-xs:6px;
+    --icon-sm:8px;
+    --icon-md:14px;
+    --icon-lg:24px;
+    --icon-xl:48px;
+} /* e:root */
+
+/* 공통 디자인 class */
+.flex-row-center {
+    display:flex; flex-flow:row nowrap;
+    justify-content: center; align-items: center;
+}
+.flex-row-between {
+    display:flex; flex-flow:row nowrap;
+    justify-content:space-between; align-items: center;
+}
+.flex-col-center {
+    display:flex; flex-flow:column nowrap;
+    justify-content: center; align-items: center;
+}
+.flex-col-between {
+    display:flex; flex-flow:column nowrap;
+    justify-content:space-between; align-items: center;
+}
