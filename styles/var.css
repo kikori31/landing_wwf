@@ -6,11 +6,25 @@
     --color-dark:#111;
     --color-light:#fff;
     --color-gray:#ddd;
-    --color-gradient-dark:linear-gradient(90deg, rgba(0,0,0,0), rgba(0,0,0,1));
+    --color-gradient-dark:linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,1));
 
     /* 글자크기 */
+    --m-font-size-base:1rem; /* 내용 */
+    --m-font-size-sm:0.875rem; /* 버튼 */
+    --m-font-size-lg:2rem; /* 제목 */
+    --m-font-weight-m:500;
+    --t-font-size-base:1.25rem;
+    --t-font-size-sm:1rem;
+    --t-font-size-lg:3rem;
+    --d-font-size-base:1.375rem;
+    --d-font-size-sm:1.125rem;
+    --d-font-size-lg:3.438rem;
 
     /* 크기, 여백 */
+    --paidding-xs:4px;
+    --padding-sm:10px;
+    --line-heihgt-md:1.4;
+    --line-heihgt-mdt:1.5;
     /* 모바일 */
     --spacing-m-l-r:15px;
     /* 태블릿 */

@@ -1,0 +1,49 @@
+<!-- 공부용 -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형 공부용</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <style>
+        /* html 내부스타일시트 */
+        body{
+            background: linear-gradient(beige,lightblue, aqua);
+            height:200vh;
+        }
+        /* 기본 상태 */
+        .box { 
+            height:150px;
+            background-color: lime;
+        }
+        .box2 {
+            width:100px; height:100px;
+            background-color: blueviolet;
+        }
+        h1 {
+            font-size: 2rem;
+            font-weight: 400;
+        }
+        /* 미디어쿼리 조건에 따라 다르게 나오는 상태 */
+        /* @media 조건 and (규칙) {조건-규칙이 만족되었을 때 실행하는 선택자와 값} */
+        /* 모바일부터 설계 시작 -> 데스크탑으로 점점 커지는 디자인 진행 시 min-width  */
+        /* 데스트탑부터 설계 시작 -> 모바일로 점점 작아지는 디자인 진행 시 max-width */
+        @media screen and (min-width:468px) {/* 468이상일때 */
+            .box{height:200px; background-color: aqua;}
+            h1{font-weight:700;}
+        } /* e:min468 */
+        @media screen and (min-width:1024px) {
+            .box2{
+                width:200px; height:200px;
+                background-color: coral;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box2"></div>
+    <h1>반응형웹</h1>
+</body>
+</html>
