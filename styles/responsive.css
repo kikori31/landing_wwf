@@ -46,6 +46,54 @@
         border-radius: 15px;
         position: absolute; right:60px; bottom:65px;
     }
+    /* -----------------------------------2행 퀴즈(태블릿 시작) */
+    #wrap .quiz {
+        padding:50px 60px;
+    }
+    #wrap .quiz .container {
+        display:flex; flex-flow:row nowrap;
+        align-items: center; /* 수직 중앙 */
+        justify-content: space-between; /* 수평 양끝 */
+        gap:20px;
+    }
+    /* --------------------------------------------2행 퀴즈 2-1 퀴즈 */
+    #wrap .quiz .container #quiz_frm {
+        width:50%;
+    }
+    #wrap .quiz .container #quiz_frm > * {
+    }
+    #wrap .quiz .container #quiz_frm * {
+    }
+    #wrap .quiz .container #quiz_frm h2 {font-size:var(--t-font-size-lgs);}
+    #wrap .quiz .container #quiz_frm h3 {font-size:var(--t-font-size-base);}
+    #wrap .quiz .container #quiz_frm .quiz_list {
+    }
+    #wrap .quiz .container #quiz_frm .quiz_list li {}
+    #wrap .quiz .container #quiz_frm .quiz_list li input[name=quiz_g] {}
+    /* --------------------------------------------input체크상태에 따른 이미지 변경 */
+    #wrap .quiz .container #quiz_frm .quiz_list li input[name=quiz_g]:checked + label {}
+    #wrap .quiz .container #quiz_frm .quiz_list li label {
+        font-size:var(--t-font-size-base);
+        background-position: 0 center;
+    }
+    #wrap .quiz .container #quiz_frm p {
+    }
+    #wrap .quiz .container #quiz_frm p #quiz_btn {
+        font-size:var(--t-font-size-sm);
+    }
+    /* --------------------------------------------2행 퀴즈 2-2 현황 */
+    #wrap .quiz .container .quiz_status {width:50%;}
+    #wrap .quiz .container .quiz_status .situation  {}
+    #wrap .quiz .container .quiz_status .situation dt  {
+        font-size:var(--t-font-size-base);
+    }
+    #wrap .quiz .container .quiz_status .situation dd  {
+        font-size:var(--t-font-size-lg);
+    }
+    #wrap .quiz .container .quiz_status .situation dd em  {}
+    #wrap .quiz .container .quiz_status .update  {font-size:var(--t-font-size-base);}
+    /* -----------------------------------2행 퀴즈(태블릿 종료) */
+
 }/* e:min760 */
 /* ---------------------------------------태블릿-> 데스크탑 */
 @media screen and (min-width:1120px) {/* 1120이상일때 */
@@ -75,4 +123,51 @@
         border-radius: 15px;
         right:0; bottom:71px;
     }
-} /* e-min */
+    /* ---------------------------------------3행 시작 */
+    #wrap .quiz {
+        padding:50px 0;
+    }
+    #wrap .quiz .container {
+        width:var(--width-desktop); margin:var(--spacing-auto);
+        gap:40px;
+    }
+    /* --------------------------------------------2행 퀴즈 2-1 퀴즈 */
+    #wrap .quiz .container #quiz_frm {
+        width:50%;
+    }
+    #wrap .quiz .container #quiz_frm > * {
+    }
+    #wrap .quiz .container #quiz_frm * {
+    }
+    #wrap .quiz .container #quiz_frm h2 {font-size:var(--d-font-size-lgs);}
+    #wrap .quiz .container #quiz_frm h3 {font-size:var(--d-font-size-base);}
+    #wrap .quiz .container #quiz_frm .quiz_list {
+    }
+    #wrap .quiz .container #quiz_frm .quiz_list li {}
+    #wrap .quiz .container #quiz_frm .quiz_list li input[name=quiz_g] {}
+    /* --------------------------------------------input체크상태에 따른 이미지 변경 */
+    #wrap .quiz .container #quiz_frm .quiz_list li input[name=quiz_g]:checked + label {}
+    #wrap .quiz .container #quiz_frm .quiz_list li label {
+        font-size:var(--d-font-size-base);
+        background-size: var(--icon-lg);
+    }
+    #wrap .quiz .container #quiz_frm p {
+    }
+    #wrap .quiz .container #quiz_frm p #quiz_btn {
+        font-size:var(--d-font-size-sm);
+    }
+    /* --------------------------------------------2행 퀴즈 2-2 현황 */
+    #wrap .quiz .container .quiz_status {}
+    #wrap .quiz .container .quiz_status .situation  {}
+    #wrap .quiz .container .quiz_status .situation dt  {
+        font-size:var(--d-font-size-base);
+    }
+    #wrap .quiz .container .quiz_status .situation dd  {
+        font-size:var(--d-font-size-lg);
+    }
+    #wrap .quiz .container .quiz_status .situation dd em  {}
+    #wrap .quiz .container .quiz_status .update  {
+        font-size:var(--d-font-size-base);
+    }
+    /* ---------------------------------------3행 종료 */
+} /* e:min1120 */
