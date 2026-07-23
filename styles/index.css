@@ -45,24 +45,8 @@
     position: absolute;
     bottom:50px;
 }
-#wrap .intro .container .btn_g a {
-    color:var(--color-light);
-    background-color: var(--color-primary);
-    padding:4px 10px;
-    border-radius:15px;
-    font-size:var(--m-font-size-sm);
-    line-height: var(--line-heihgt-mdt);
-}
-#wrap .intro .container .btn_g a::after{
-    /* 화살표 svg 연결 */
-    background-image: url(../images/arrow.svg);
-    /* background-repeat: no-repeat; */
-    /* background-position: 97% center; */
-    background-size: 100%; /* 가로,세로 크기를 상대적으로 차지 하겠다는 의미 */
-    filter:invert(1);
-    content:''; display:block;
-    width:6px; height:12px; 
-}
+#wrap .intro .container .btn_g a {}
+#wrap .intro .container .btn_g a::after{}
 #wrap .intro .container .btn_g .sponser_btn {
     
 }
@@ -167,3 +151,66 @@
 #wrap .quiz .answer_popup_bg .answer_box #answer_close_btn img {width:100%;}
 #wrap .quiz .answer_popup_bg .answer_box h2 {font-size: var(--t-font-size-base);}
 #wrap .quiz .answer_popup_bg .answer_box p {text-align:center;font-size:var(--m-font-size-sm);}
+/* ---------------------------------------------------3행 비디오 */
+#wrap .video_bg {
+    background-image: url(../images/video_bg.png);
+    background-size: cover;
+    background-position: center bottom;
+}
+#wrap .video_bg .container {
+    padding:60px 15px;
+    gap:20px;
+}
+#wrap .video_bg .container h1 {
+    font-size:var(--m-font-size-lgs);
+    text-align: center;
+}
+#wrap .video_bg .container .video {
+    width:100%;
+    max-width: 1120px;
+    /* 16:9 비율 조정 속성 */
+    aspect-ratio:16 / 9; /* 연산자 앞뒤에(예시: 16 / 9) 공백을 넣어줘야 함 */
+}
+#wrap .video_bg .container .video iframe {
+    width:100%; height: 100%; /* 부모 비율 상대적으로 따라가게 만들기 */
+}
+#wrap .video_bg .container .sponser_btn {}
+/* -----------------------------------------------------4행 감소 내용 시작 */
+#wrap .contents {
+    background-image: url(../images/50_bg.png);
+    background-size: cover;
+    background-position: center top;
+}
+#wrap .contents .container {
+    padding:70px 15px;
+    
+}
+#wrap .contents .container * {color:var(--color-light);}
+#wrap .contents .container h1 {
+    font-size: var(--m-font-size-lgs);
+    margin-bottom: 25px;
+    display:flex; flex-flow:column wrap;
+}
+#wrap .contents .container h1 span {}
+#wrap .contents .container h1 span em {
+    color:var(--color-dark);
+    position: relative;
+    z-index: 40;
+}
+#wrap .contents .container h1 span em::after {
+    background-color: var(--color-light);
+    width:92px; height:21px;
+    content:''; display: block;
+    position: absolute;
+    left:0; bottom:0; z-index: 30;
+}
+#wrap .contents .container p {
+    font-size:var(--m-font-size-sm);
+    margin-bottom: 25px;
+    line-height: var(--line-heihgt-mdt);
+}
+#wrap .contents .container .content_bg {
+    width:100%;
+    max-width: 1120px;
+}
+#wrap .contents .container .content_bg img {width:100%;}
