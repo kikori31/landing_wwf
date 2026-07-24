@@ -95,23 +95,23 @@
     }
     #wrap .contents .container * {color:var(--color-light);}
     #wrap .contents .container h1 {
-        font-size: var(--t-font-size-lg);
+        white-space:nowrap; /* 글자 줄바꿈 금지(강제 한줄 처리) flex와 관계없음  */
+        font-size: 2.5rem;
         margin-bottom: 35px;
         display: flex; flex-flow:row nowrap;
     }
     #wrap .contents .container h1 span {}
-    #wrap .contents .container h1 em {
+    #wrap .contents .container h1 span em {
         color:var(--color-dark);
         position: relative;
         z-index: 50;
     }
-    #wrap .contents .container h1 em::after {
+    #wrap .contents .container h1 span em::after {
         background-color: var(--color-light);
-        width:200px; height:45px;
     }
     #wrap .contents .container h1+ p {
         font-size:var(--t-font-size-base);
-        margin-bottom: 35px;
+        /* margin-bottom: 35px; */
     }
     #wrap .contents .container p:nth-child(3) {}
     #wrap .contents .container p:nth-child(3) img {}
@@ -202,16 +202,15 @@
     }
     #wrap .contents .container * {color:var(--color-light);}
     #wrap .contents .container h1 {
-        font-size: var(--d-font-size-lg);
+        font-size:3rem;
     }
     #wrap .contents .container h1 span {}
-    #wrap .contents .container h1 em {}
-    #wrap .contents .container h1 em::after {
-        width:230px; height:60px;
+    #wrap .contents .container h1 span em {}
+    #wrap .contents .container h1 span em::after {
     }
     #wrap .contents .container h1+ p {
         font-size:var(--d-font-size-base);
     }
     #wrap .contents .container p:nth-child(3) {}
-    #wrap .contents .container p:nth-child(3) img {}
+    #wrap .contents .container p:nth-child(3) img {width:100%;}
 } /* e:min1120 */
